@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+</head>
+<body>
+    <table border="1">
+		<tr>
+            <th> Specificity </th>
+            <th> a </th>
+			<th> b </th>
+			<th> c </th>
+			<th> result </th>
+        </tr>
+		<tr>
+            <td> table.forum tr:hover p </td>
+            <td> 0 </td>
+			<td> 2 </td>
+			<td> 3 </td>
+			<td> 23 </td>
+        </tr>
+		<tr>
+            <td> #catalog .col3 .height div </td>
+            <td> 1 </td>
+			<td> 2 </td>
+			<td> 1 </td>
+			<td> 121 </td>
+        </tr>
+		<tr>
+            <td> a.new > #newOrder > span:visited </td>
+            <td> 1 </td>
+			<td> 2 </td>
+			<td> 2 </td>
+			<td> 122 </td>
+        </tr>
+		<tr>
+            <td> .menu ul li:last-child </td>
+            <td> 0 </td>
+			<td> 2 </td>
+			<td> 2 </td>
+			<td> 22 </td>
+        </tr>
+		<tr>
+            <td> #content.three-col </td>
+            <td> 1 </td>
+			<td> 1 </td>
+			<td> 0 </td>
+			<td> 110 </td>
+        </tr>
+		<tr>
+            <td> h1 + .block_title </td>
+            <td> 0 </td>
+			<td> 1 </td>
+			<td> 1 </td>
+			<td> 11 </td>
+        </tr>
+		<tr>
+            <td> #newPage h2#lastHeader > span.smallFont </td>
+            <td> 2 </td>
+			<td> 1 </td>
+			<td> 2 </td>
+			<td> 212 </td>
+        </tr>
+	
+    </table>
+</body>
+</html>
