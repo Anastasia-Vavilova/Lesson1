@@ -1,16 +1,11 @@
 "use strict";
-let userFirstName=prompt("First name:"),
-	userLastName=prompt("Last name:");
- 
-alert("+userFirstName+" "+userLastName);
+let userFirstName=prompt("Your first name:"),
+	userLastName=prompt("Your last name:");
 	
-let userBirthDay=prompt("Birth Day:"),
-	userBirthMonth=prompt("Birth Month:"),
-	userBirthYear=prompt("Birth Year:");
- 
-alert("Date of birth: " + userBirthDay + " " + userBirthMonth + " " + userBirthYear);
+let userBirthDay=prompt("Your birth Day:"),
+	userBirthMonth=prompt("Your birth Month:"),
+	userBirthYear=prompt("Your birth Year:");
 
-function userAge(x) {
-	let age=calendar.get(Calendar.YEAR)-x;
-	userAge(userBirthYear);
-};
+let userAge=2020-userBirthYear;
+
+alert("Your name: " +userFirstName+" "+userLastName+"\nYour date of birth: "+userBirthDay+"."+userBirthMonth+"."+userBirthYear+"\nYour age: "+userAge);
