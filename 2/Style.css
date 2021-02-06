@@ -1,0 +1,28 @@
+body {
+background-color: #FFFAFA;
+}
+
+h1 {
+	text-align:center;
+	font-size:36px; 
+	color:purple;
+	background-color:lightpink;
+}
+
+ul {
+	text-align:center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align:center;
+	font-size:21px;
+	color:green;
+
+}
