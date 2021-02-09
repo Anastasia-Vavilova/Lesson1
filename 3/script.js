@@ -13,11 +13,14 @@ let f_3 = (arr) => {
  return new Promise((resolve, reject) => {
 	let xhr = new XMLHttpRequest();
 	let url = new URL('http://45.67.59.109:2001/order/pay');
-	url.searchParams.set("id", arr.id,true);
+
 	xhr.open('POST', url);
 	xhr.setRequestHeader('Content-Type', 'application/json;charset=utf-8');
 	xhr.timeout = 10000;
-	xhr.send();
+	xhr.send(JSON.stringify(
+	{
+                                id: arr.id
+	}));
 	xhr.onload = () => {
 		if (xhr.status != 200) {
 			 reject(alert(`Error ${xhr.status}: ${xhr.statusText}`));
